@@ -1,82 +1,64 @@
 import Head from 'next/head'
+import Contact from '../components/contact'
+import Footer from '../components/footer'
+import Hero from '../components/hero'
+import Navbar from '../components/navbar'
+import Portfolio from '../components/portfolio'
+import Skill from '../components/skill'
+import ToTop from '../components/totop'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <div className="bg-gray-900 h-full">
+        <div className="container mx-auto">
+          <Head>
+            <title>Create Next App</title>
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <div className="lg:ml-32 md:ml-26">
+            <Image className="hidden w-2/5 opacity-10 mt-96" src="/w2.jpg" layout='fill' alt="" />
+            <svg width="351" height="183" viewBox="0 0 351 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_ddi_3:151)">
+                <rect x="66" y="68.5947" width="146.59" height="146.59" rx="73.2949" transform="rotate(-75 66 68.5947)" fill="url(#paint0_linear_3:151)" />
+              </g>
+              <defs>
+                <filter id="filter0_ddi_3:151" x="0.0655842" y="-148.628" width="350.175" height="330.79" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dx="-14.5392" dy="-24.2321" />
+                  <feGaussianBlur stdDeviation="33.9249" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.909 0 0 0 0 0.93084 0 0 0 0 0.951 0 0 0 0.05 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3:151" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dx="43.6177" dy="14.5392" />
+                  <feGaussianBlur stdDeviation="38.7713" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.00779221 0 0 0 0 0.00987013 0 0 0 0 0.0122078 0 0 0 0.4 0" />
+                  <feBlend mode="normal" in2="effect1_dropShadow_3:151" result="effect2_dropShadow_3:151" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_3:151" result="shape" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dx="-19.3856" dy="-7.26962" />
+                  <feGaussianBlur stdDeviation="48.4641" />
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.974 0 0 0 0 0.974889 0 0 0 0 0.976 0 0 0 0.03 0" />
+                  <feBlend mode="normal" in2="shape" result="effect3_innerShadow_3:151" />
+                </filter>
+                <linearGradient id="paint0_linear_3:151" x1="229.605" y1="-36.1123" x2="21.5383" y2="316.405" gradientUnits="userSpaceOnUse">
+                  <stop offset="0.289548" stopColor="white" />
+                  <stop offset="0.697917" stopColor="#121416" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <Navbar />
+          <Hero />
+          <Portfolio />
+          <Contact />
+          <ToTop />
         </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
+        <Footer />
+      </div>
+    </>
   )
 }
