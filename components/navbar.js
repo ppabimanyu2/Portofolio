@@ -9,7 +9,7 @@ export default function Navbar() {
     ]
     const navLinks = links.map(link => {
         return (
-            <li key={link.id} className={`mx-4 cursor-pointer`} >
+            <li key={link.id} className={`cursor-pointer hover:font-semibold hover:border-b-2 border-gray-900`} >
                 <Link to={link.to} spy={true} smooth={true} offset={-70} duration={500}>{link.name}</Link>
             </li >
         );
@@ -23,7 +23,7 @@ export default function Navbar() {
                         <circle cx="7.57734" cy="24.2922" r="7.57734" fill="white" />
                     </svg>
                 </div>
-                <ul className="bg-white shadow-lg p-4 rounded-lg flex">
+                <ul className="bg-white shadow-lg p-4 rounded-lg flex justify-around w-96 h-16 items-center">
                     {navLinks}
                 </ul>
             </nav>

@@ -27,6 +27,10 @@ export default class Hero extends Component {
         this.typed.destroy();
     }
     render() {
+        const text1 = "Breathing"
+        const chars1 = text1.split('');
+        const text2 = "cod"
+        const chars2 = text2.split('');
         return (
             <>
                 <div className="vertical-rl text-white absolute mt-96 flex animate__animated animate__bounce animate__infinite
@@ -40,8 +44,14 @@ export default class Hero extends Component {
                 </div>
                 <section className="grid grid-cols-2 lg:mx-24 md:mx-16" id="home">
                     <div className="z-10">
-                        <h1 className="text-9xl text-white" data-aos="fade-right">Breathing</h1><br />
-                        <h1 className="text-9xl text-white" data-aos="fade-right" data-aos-delay="300">cod<span className="text-black">e</span></h1>
+                        <div className="flex">{chars1.map(char => {
+                            return <h1 className="text-9xl text-white hover:text-black" data-aos="fade-right">{char}</h1>
+                        })}</div>
+                        <div className="flex">{chars2.map(char => {
+                            return <h1 className="text-9xl text-white hover:text-black" data-aos="fade-right">{char}</h1>
+                        })}<h1 className="text-black text-9xl hover:text-white" data-aos="fade-right">e</h1></div>
+                        {/* <h1 className="text-9xl text-white" data-aos="fade-right">Breathing</h1><br /> */}
+                        {/* <h1 className="text-9xl text-white" data-aos="fade-right" data-aos-delay="300">cod<span className="text-black">e</span></h1> */}
                         <div className="text-white mt-24" data-aos="fade-zoom-in" data-aos-delay="1250">
                             <h4 className="text-base font-bold">Email</h4>
                             <p>ppabimanyu@gmail.com</p>
