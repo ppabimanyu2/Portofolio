@@ -9,6 +9,9 @@ export default class Contact extends Component {
             duration: 1000
         });
     }
+    componentDidUpdate() {
+        Aos.refresh()
+    }
     render() {
         return (
             <section id="contact" >

@@ -8,6 +8,9 @@ export default class Portfolio extends Component {
             duration: 1000
         });
     }
+    componentDidUpdate() {
+        Aos.refresh()
+    }
     render() {
         return (
             <section className="mx-auto mb-12 mt-60" id="portfolio">

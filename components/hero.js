@@ -20,6 +20,9 @@ export default class Hero extends Component {
             duration: 1000
         });
     }
+    componentDidUpdate() {
+        Aos.refresh()
+    }
     componentWillUnmount() {
         this.typed.destroy();
     }
