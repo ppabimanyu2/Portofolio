@@ -17,7 +17,7 @@ export default class Contact extends Component {
             <section id="contact" >
                 <h1 className="absolute text-9xl font-bold text-white opacity-25 mt-32">CONTACT</h1>
                 <div className="relative container px-4 mx-auto">
-                    <Image className="hidden w-2/5 opacity-10" src="/w2.jpg" layout='fill' alt="" />
+                    <Image className="hidden w-full opacity-10" src="/w2.jpg" layout='fill' alt="" />
                     <div className="text-center mb-20">
                         <span className="text-lg text-blue-400 font-bold" data-aos="fade-zoom-in" data-aos-delay="200">Have a question?</span>
                         <h2 className="mt-10 text-5xl font-bold font-heading text-white" data-aos="fade-zoom-in" data-aos-delay="400">Contact with us</h2>
