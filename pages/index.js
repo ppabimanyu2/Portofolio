@@ -14,7 +14,7 @@ export default function Home() {
       <div className="bg-gray-900 h-full">
         <div className="container mx-auto">
           <Head>
-            <title>Create Next App</title>
+            <title>PPAbimanyu</title>
             <link rel="icon" href="/favicon.ico" />
           </Head>
           <div className="lg:ml-32 md:ml-26">

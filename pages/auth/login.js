@@ -3,6 +3,10 @@ import Image from 'next/image'
 export default function Login() {
     return (
         <>
+            <Head>
+                <title>Login | PPAbimanyu</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <section class="absolute w-full top-0 bg-gray-900 h-screen">
                 <Image className="hidden w-auto h-screen opacity-10 mt-96" src="/w2.jpg" layout='fill' alt="" />
                 <div class="absolute top-0 w-full "></div>
