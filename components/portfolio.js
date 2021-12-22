@@ -22,9 +22,9 @@ export default class Portfolio extends Component {
                             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
                             <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                                 <h3 className="text-center">
-                                    <a className="text-white text-2xl font-bold text-center" href="/">
+                                    <a className="text-white text-2xl font-bold text-center" href="https://github.com/ppabimanyu/Project-Web">
                                         <span className="absolute inset-0"></span>
-                                        Top 10 highest paid programming languages of 2021
+                                        LiveIn - Laravel Web Framework
                                     </a>
                                 </h3>
                             </div>
@@ -33,9 +33,9 @@ export default class Portfolio extends Component {
                             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
                             <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                                 <h3 className="text-center">
-                                    <a className="text-white text-2xl font-bold text-center" href="/">
+                                    <a className="text-white text-2xl font-bold text-center" href="https://github.com/ppabimanyu/Tugas---KNN">
                                         <span className="absolute inset-0"></span>
-                                        Python Frameworks
+                                        KNN - Machine Larning
                                     </a>
                                 </h3>
                             </div>
@@ -44,9 +44,9 @@ export default class Portfolio extends Component {
                             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
                             <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                                 <h3 className="text-center">
-                                    <a className="text-white text-2xl font-bold text-center" href="/">
+                                    <a className="text-white text-2xl font-bold text-center" href="https://github.com/ppabimanyu/Tugas---CNN">
                                         <span className="absolute inset-0"></span>
-                                        The best plugins for Visual Studio Code
+                                        CNN - Deep Learning
                                     </a>
                                 </h3>
                             </div>
