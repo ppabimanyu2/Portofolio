@@ -13,7 +13,7 @@ export default class Portfolio extends Component {
     }
     render() {
         return (
-            <section className="mx-auto mb-12 mt-60" id="portfolio">
+            <section className="mx-auto mb-12 sm:mt-60 mt-96" id="portfolio">
                 <article>
                     <h1 className="absolute text-9xl font-bold text-white opacity-25 right-0">PORTFOLIO</h1>
                     <h2 className="text-2xl font-extrabold text-white" data-aos="fade-right">PORTFOLIO</h2>

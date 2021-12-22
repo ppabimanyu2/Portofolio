@@ -37,11 +37,15 @@ export default class Home extends Component {
         <div className="bg-gray-900 h-full">
           <div className="container mx-auto">
             <Head>
-              <title>PPAbimanyu {this.state.date.toLocaleTimeString()}</title>
+              <title>PPA {this.state.date.toLocaleTimeString('en-US', {
+                hour: 'numeric', // numeric, 2-digit
+                minute: 'numeric', // numeric, 2-digit
+                second: 'numeric', // numeric, 2-digit
+              })}</title>
               <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="lg:ml-32 md:ml-26">
-              <Image className="hidden w-2/5 opacity-10 mt-96" src="/w2.jpg" layout='fill' alt="" />
+            <div className="lg:ml-32 md:ml-26 sm:block hidden">
+              {/* <Image className="hidden w-2/5 opacity-10 mt-96 object-cover" src="/w2.jpg" layout='fill' alt="" /> */}
               <svg width="351" height="183" viewBox="0 0 351 183" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_ddi_3:151)">
                   <rect x="66" y="68.5947" width="146.59" height="146.59" rx="73.2949" transform="rotate(-75 66 68.5947)" fill="url(#paint0_linear_3:151)" />
@@ -75,12 +79,13 @@ export default class Home extends Component {
               </svg>
             </div>
             <Navbar />
+            <h1 className="absolute text-9xl font-bold text-white opacity-25 sm:right-32 right-0 sm:top-32">WELCOME</h1>
             <Hero />
             <Portfolio />
             <Contact />
             <ToTop />
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </>
     )

@@ -17,13 +17,13 @@ export default class Contact extends Component {
             <section id="contact" >
                 <h1 className="absolute text-9xl font-bold text-white opacity-25 mt-32">CONTACT</h1>
                 <div className="relative container px-4 mx-auto">
-                    <Image className="hidden w-full opacity-10" src="/w2.jpg" layout='fill' alt="" />
+                    <Image className="hidden w-full opacity-10 object-cover" src="/w2.jpg" layout='fill' alt="" />
                     <div className="text-center mb-20">
                         <span className="text-lg text-blue-400 font-bold" data-aos="fade-zoom-in" data-aos-delay="200">Have a question?</span>
                         <h2 className="mt-10 text-5xl font-bold font-heading text-white" data-aos="fade-zoom-in" data-aos-delay="400">Contact with us</h2>
                     </div>
                     <div className="max-w-4xl mx-auto">
-                        <div className="flex flex-wrap -mx-4 mb-20">
+                        <div className="flex flex-wrap -mx-4 mb-92 pb-32">
                             <div className="w-full lg:w-1/3 px-4 mb-4 lg:mb-0" data-aos="fade-right">
                                 <div className="bg-gray-600 rounded-lg">
                                     <Image className="h-64 w-full rounded-lg object-cover" src="/profile.jpg" width="400" height="400" alt="" />
@@ -74,7 +74,7 @@ export default class Contact extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="text-center">
+                        {/* <div className="text-center">
                             <p className="mb-4 text-xl text-gray-300">The brown fox jumps over the lazy dog.</p>
                             <a className="inline-flex text-blue-400 hover:text-blue-500 font-bold" href="/">
                                 <span>Learn more</span>
@@ -82,7 +82,7 @@ export default class Contact extends Component {
                                     <path d="M18.7383 1.47342L18.7383 10.9304L17.5562 10.9304L17.5562 2.89788L0.834948 19.625L0.00154682 18.7916L16.7228 2.06448L9.28125 2.06448L9.28125 0.882355L18.1472 0.882355C18.4737 0.882355 18.7383 1.14697 18.7383 1.47342Z" fill="#1F40FF"></path>
                                 </svg>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
