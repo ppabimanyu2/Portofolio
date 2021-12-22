@@ -44,11 +44,11 @@ export default class Hero extends Component {
                 </div>
                 <section className="grid grid-cols-2 lg:mx-24 md:mx-16 sm:pt-0 pt-28" id="home">
                     <div className="z-10">
-                        <div className="flex">{chars1.map(char => {
-                            return <h1 className="sm:text-9xl text-6xl text-white hover:text-black" data-aos="fade-right">{char}</h1>
+                        <div className="flex">{chars1.map((char, i) => {
+                            return <h1 key={i} className="sm:text-9xl text-6xl text-white hover:text-black" data-aos="fade-right">{char}</h1>
                         })}</div>
-                        <div className="flex">{chars2.map(char => {
-                            return <h1 className="sm:text-9xl text-6xl text-white hover:text-black" data-aos="fade-right">{char}</h1>
+                        <div className="flex">{chars2.map((char, i) => {
+                            return <h1 key={i} className="sm:text-9xl text-6xl text-white hover:text-black" data-aos="fade-right">{char}</h1>
                         })}<h1 className="text-black sm:text-9xl text-6xl hover:text-white" data-aos="fade-right">e</h1></div>
                         <div className="text-white mt-24 sm:block hidden" data-aos="fade-zoom-in" data-aos-delay="1250">
                             <h4 className="text-base font-bold">Email</h4>
